@@ -10,9 +10,10 @@
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/favicon.png' %>
-    <link rel="stylesheet" href="stylesheets/layouts/gr8.css" />
+
   </head>
   <body>
+    <%= partial "layouts/navbar" %>
     <%= yield %>
   </body>
 </html>

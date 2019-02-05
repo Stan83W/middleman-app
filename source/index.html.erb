@@ -1,15 +1,13 @@
----
-title: Le Wagon - Middleman
----
+<div class="container text-center">
+  <h1><%= Date.today.strftime("%b %d, %Y") %></h1>
+  <ul class="list-unstyled">
+    <% ["ERB", "Ruby", "SCSS"].each do |tech| %>
+    <li>
+      I'm playing with <%= tech %>
+    </li>
+    <% end %>
+  </ul>
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
-  </div>
+
+
 </div>
